@@ -48,7 +48,6 @@ void display(struct Stack *st)
         for(int i=st->top; i>=0; i--)
             printf("%d ",st->s[i]);
     }
-        
 }
 
 int main()

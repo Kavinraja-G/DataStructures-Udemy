@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+int swaps = 0;
 void merge(int a[], int l, int mid, int h)
 {
     int b[100];
@@ -9,8 +9,11 @@ void merge(int a[], int l, int mid, int h)
 
     while (i<=mid && j<=h)
     {
-        if(a[i]<a[j])
+        if(a[i]<=a[j])
+        {    
             b[k++] = a[i++];
+            swaps += mid+1-i;
+        }
         else
             b[k++] = a[j++];
     }
@@ -51,5 +54,6 @@ int main()
     printf("\nAfter sorting the elements: \n");
     for(int i=0;i<size;i++)
         printf("%d ",a[i]);
+    printf("Swaps in sorting: %d",swaps);
     printf("\n");
 }

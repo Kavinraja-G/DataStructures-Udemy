@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - BagOfNumbers",
+            "request": "launch",
+            "mainClass": "BagOfNumbers",
+            "projectName": "DataStructures_Algorithms_bdfe5061"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BagOfNumbers",
+            "request": "launch",
+            "mainClass": "DataStructures.HackerEarth.Stacks.BagOfNumbers",
+            "projectName": "DataStructures_Algorithms_bdfe5061"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - solution",
+            "request": "launch",
+            "mainClass": "DataStructures.HackerEarth.Stacks.solution",
+            "projectName": "DataStructures_Algorithms_bdfe5061"
+        },
+        {
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
